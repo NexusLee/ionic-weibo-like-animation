@@ -1,0 +1,194 @@
+page-post {
+  .scroll-content {
+    overflow: hidden;
+  }
+  .content-wrap {
+    .box {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      font-size: 12px;
+      font-family: 'Arial';
+      text-transform: uppercase;
+    }
+
+    .box-img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto 12px;
+      .icon {
+        width: 15.47vw;
+        height: 15.47vw;
+        max-height: 100%;
+        margin: 0 auto;
+        background-size: 15.47vw 15.47vw;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        &.icon-community {
+          background-image: url('../assets/imgs/post/community.png');
+        }
+        &.icon-literature {
+          background-image: url('../assets/imgs/post/literature.png');
+        }
+        &.icon-social-conditions {
+          background-image: url('../assets/imgs/post/social-conditions.png');
+        }
+        &.icon-proposal {
+          background-image: url('../assets/imgs/post/proposal.png');
+        }
+      }
+      img {
+        width: 15.47vw;
+        max-width: 58px;
+        height: auto;
+        max-height: 100%;
+      }
+    }
+
+    .fadeInUp {
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+    }
+
+    .fadeInUp.one {
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+
+    .fadeInUp.two {
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+
+    .fadeInUp.three {
+      -webkit-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+    }
+
+    .fadeInUp.four {
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+
+    .fadeOutDown {
+      -webkit-animation-name: fadeOutDown;
+      animation-name: fadeOutDown;
+    }
+
+    .fadeOutDown.one {
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+
+    .fadeOutDown.two {
+      -webkit-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+    }
+
+    .fadeOutDown.three {
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+
+    .fadeOutDown.four {
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+  }
+
+  .animate {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  ion-footer {
+    text-align: center;
+    .toolbar-background-ios {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    .close {
+      font-size: 3rem;
+      color: rgb(126, 127, 128);
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+    .rotate {
+      -webkit-animation-duration: .5s;
+      animation-duration: .5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .rotateDegree {
+      -webkit-animation-name: rotateDegree;
+      animation-name: rotateDegree;
+    }
+    .close-active {
+      -webkit-animation-name: rotateReverseDegree;
+      animation-name: rotateReverseDegree;
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @-webkit-keyframes fadeOutDown {
+    from {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  @-webkit-keyframes rotateDegree {
+    from {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+
+  @-webkit-keyframes rotateReverseDegree {
+    from {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    to {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+  }
+
+}

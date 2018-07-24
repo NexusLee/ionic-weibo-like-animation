@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="content-wrap">
+
+    <ion-grid>
+      <ion-row style="margin: 0 15px;">
+        <ion-col col-3>
+          <div class="box animate one" [ngClass]="{'fadeOutDown': closeActive, 'fadeInUp': !closeActive}">
+            <div class="box-img community"><div class="icon icon-community"></div></div>
+            <div>社区动态</div>
+          </div>
+        </ion-col>
+        <ion-col col-3>
+          <div class="box animate fadeInUp two" [ngClass]="{'fadeOutDown': closeActive == true}">
+            <div class="box-img literature"><div class="icon icon-literature"></div></div>
+            <div>知识文献</div>
+          </div>
+        </ion-col>
+        <ion-col col-3>
+          <div class="box animate fadeInUp three" [ngClass]="{'fadeOutDown': closeActive == true}">
+            <div class="box-img social-conditions"><div class="icon icon-social-conditions"></div></div>
+            <div>社情民意</div>
+          </div>
+        </ion-col>
+        <ion-col col-3>
+          <div class="box animate fadeInUp four" [ngClass]="{'fadeOutDown': closeActive == true}">
+            <div class="box-img proposal"><div class="icon icon-proposal"></div></div>
+            <div>提案建议</div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-icon class="close animate rotateDegree" name="add" [ngClass]="{'close-active': closeActive == true}"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

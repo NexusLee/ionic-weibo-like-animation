@@ -1,1 +1,5 @@
 .DS_Store
+.sourcemaps/
+node_modules/
+www/
+.idea/

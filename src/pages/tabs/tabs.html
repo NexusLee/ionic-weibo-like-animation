@@ -1,0 +1,7 @@
+<ion-tabs selectedIndex={{selectTabIndex}} class="tabs-ios">
+  <ion-tab [root]="tab1Root" tabUrlPath="0" tabIcon="customHomeIcon" tabTitle="首页"></ion-tab>
+  <ion-tab [root]="tab2Root" tabUrlPath="1" tabIcon="customResourceIcon" tabTitle="资源"></ion-tab>
+  <ion-tab class="post-tab"  tabIcon="customPostIcon" (ionSelect)="presentPostModal()"></ion-tab>
+  <ion-tab [root]="tab4Root" tabUrlPath="2" tabIcon="customMessageIcon" tabTitle="联系" tabBadge="24" tabBadgeStyle="danger"></ion-tab>
+  <ion-tab [root]="tab5Root" tabUrlPath="3" tabIcon="customMeIcon" tabTitle="我的"></ion-tab>
+</ion-tabs>
